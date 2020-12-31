@@ -5,8 +5,6 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'lib'))
 import logging
 import os
 
-import firebase_admin
-from firebase_admin import auth as firebase_auth
 from google.appengine.ext.webapp import template
 import webapp2
 
