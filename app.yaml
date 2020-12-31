@@ -1,0 +1,15 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: main.app
+
+libraries:
+- name: ssl
+  version: latest
+
+env_variables:
+  PYTHONHTTPSVERIFY: 1
+  GAE_USE_SOCKETS_HTTPLIB : "anyvalue"
